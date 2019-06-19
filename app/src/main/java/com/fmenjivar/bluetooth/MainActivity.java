@@ -28,14 +28,14 @@ import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView status;
-    private Button btnConnect;
-    private ListView listView;
-    private Dialog dialog;
-    private TextInputLayout inputLayout;
-    private ArrayAdapter<String> chatAdapter;
-    private ArrayList<String> chatMessages;
-    private BluetoothAdapter bluetoothAdapter;
+     TextView status;
+    Button btnConnect;
+    ListView listView;
+     Dialog dialog;
+     TextInputLayout inputLayout;
+     ArrayAdapter<String> chatAdapter;
+     ArrayList<String> chatMessages;
+     BluetoothAdapter bluetoothAdapter;
 
     public static final int MESSAGE_STATE_CHANGE = 1;
     public static final int MESSAGE_READ = 2;
@@ -215,10 +215,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findViewsByIds() {
-        status = (TextView) findViewById(R.id.status);
-        btnConnect = (Button) findViewById(R.id.btn_connect);
-        listView = (ListView) findViewById(R.id.list);
-        inputLayout = (TextInputLayout) findViewById(R.id.input_layout);
+        status =  findViewById(R.id.status);
+        btnConnect =  findViewById(R.id.btn_connect);
+        listView =  findViewById(R.id.list);
+        inputLayout =  findViewById(R.id.input_layout);
         View btnSend = findViewById(R.id.btn_send);
 
         btnSend.setOnClickListener(new View.OnClickListener() {
